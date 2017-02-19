@@ -1,0 +1,493 @@
+EESchema Schematic File Version 2
+LIBS:BT-Modul-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:opa2134
+LIBS:library
+LIBS:BT-Modul-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CP C2
+U 1 1 586A599C
+P 4650 2750
+F 0 "C2" H 4675 2850 50  0000 L CNN
+F 1 "10u" H 4675 2650 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 4688 2600 50  0001 C CNN
+F 3 "" H 4650 2750 50  0000 C CNN
+	1    4650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_B-RESCUE-BT-Modul P2
+U 1 1 586A59D0
+P 2450 2400
+F 0 "P2" H 2650 2200 50  0000 C CNN
+F 1 "USB_B" H 2400 2600 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B5B-PH-K_05x2.00mm_Straight" V 2400 2300 50  0001 C CNN
+F 3 "" V 2400 2300 50  0000 C CNN
+	1    2450 2400
+	0    -1   1    0   
+$EndComp
+$Comp
+L +5V #PWR01
+U 1 1 586A5AFF
+P 2900 2050
+F 0 "#PWR01" H 2900 1900 50  0001 C CNN
+F 1 "+5V" H 2900 2190 50  0000 C CNN
+F 2 "" H 2900 2050 50  0000 C CNN
+F 3 "" H 2900 2050 50  0000 C CNN
+	1    2900 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 586A5B1C
+P 2900 2650
+F 0 "#PWR02" H 2900 2400 50  0001 C CNN
+F 1 "GND" H 2900 2500 50  0000 C CNN
+F 2 "" H 2900 2650 50  0000 C CNN
+F 3 "" H 2900 2650 50  0000 C CNN
+	1    2900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 586A5B85
+P 5550 2050
+F 0 "#PWR03" H 5550 1900 50  0001 C CNN
+F 1 "+5V" H 5550 2190 50  0000 C CNN
+F 2 "" H 5550 2050 50  0000 C CNN
+F 3 "" H 5550 2050 50  0000 C CNN
+	1    5550 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 586A5B99
+P 5550 3250
+F 0 "#PWR04" H 5550 3000 50  0001 C CNN
+F 1 "GND" H 5550 3100 50  0000 C CNN
+F 2 "" H 5550 3250 50  0000 C CNN
+F 3 "" H 5550 3250 50  0000 C CNN
+	1    5550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C3
+U 1 1 586A5C67
+P 5800 3350
+F 0 "C3" H 5825 3450 50  0000 L CNN
+F 1 "10u" H 5825 3250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 5838 3200 50  0001 C CNN
+F 3 "" H 5800 3350 50  0000 C CNN
+	1    5800 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 3500 2    60   Input ~ 0
+-5V
+Text Notes 1600 1700 0    120  ~ 0
+External Connectors
+Text Notes 4850 1700 0    120  ~ 0
+Negative Supply
+$Comp
+L ICL7660S U2
+U 1 1 586ABBB1
+P 5450 2650
+F 0 "U2" H 5100 3000 60  0000 C CNN
+F 1 "ICL7660S" H 5250 2300 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 5450 2650 60  0001 C CNN
+F 3 "" H 5450 2650 60  0001 C CNN
+	1    5450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L KRC-86B U1
+U 1 1 586ABE31
+P 2900 5550
+F 0 "U1" H 2900 6050 60  0000 C CNN
+F 1 "KRC-86B" H 2900 5000 60  0000 C CNN
+F 2 "BTA:KRC-86B" H 2800 5550 60  0001 C CNN
+F 3 "" H 2800 5550 60  0001 C CNN
+	1    2900 5550
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 4950 0    120  ~ 0
+Bluetooth Receiver
+$Comp
+L +5V #PWR05
+U 1 1 586AC24E
+P 1750 4850
+F 0 "#PWR05" H 1750 4700 50  0001 C CNN
+F 1 "+5V" H 1750 4990 50  0000 C CNN
+F 2 "" H 1750 4850 50  0000 C CNN
+F 3 "" H 1750 4850 50  0000 C CNN
+	1    1750 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 586AC268
+P 1750 5550
+F 0 "#PWR06" H 1750 5300 50  0001 C CNN
+F 1 "GND" H 1750 5400 50  0000 C CNN
+F 2 "" H 1750 5550 50  0000 C CNN
+F 3 "" H 1750 5550 50  0000 C CNN
+	1    1750 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 2200 5700 0    60   Input ~ 0
+AGND
+Text GLabel 2200 5800 0    60   Input ~ 0
+INT_R
+Text GLabel 2200 5900 0    60   Input ~ 0
+INT_L
+$Comp
+L opa2134 U3
+U 1 1 586AC7C0
+P 8200 2400
+F 0 "U3" H 8600 2800 60  0000 C CNN
+F 1 "opa2134" H 8000 2800 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 7550 2850 60  0001 C CNN
+F 3 "" H 7550 2850 60  0000 C CNN
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L opa2134 U3
+U 2 1 586AC801
+P 8200 3750
+F 0 "U3" H 8600 4150 60  0000 C CNN
+F 1 "opa2134" H 8000 4150 60  0000 C CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm_LongPads" H 7550 4200 60  0001 C CNN
+F 3 "" H 7550 4200 60  0000 C CNN
+	2    8200 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 7650 1700 0    120  ~ 0
+Audio Amplifier
+Text GLabel 8400 2850 3    60   Input ~ 0
+-5V
+$Comp
+L +5V #PWR07
+U 1 1 586ACD1E
+P 8400 2050
+F 0 "#PWR07" H 8400 1900 50  0001 C CNN
+F 1 "+5V" H 8400 2190 50  0000 C CNN
+F 2 "" H 8400 2050 50  0000 C CNN
+F 3 "" H 8400 2050 50  0000 C CNN
+	1    8400 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 8900 2400 2    60   Input ~ 0
+OUT_R
+Text GLabel 8900 3750 2    60   Input ~ 0
+OUT_L
+$Comp
+L POT-RESCUE-BT-Modul RV1
+U 1 1 586AD48F
+P 7900 2700
+F 0 "RV1" H 7900 2620 50  0000 C CNN
+F 1 "50k" H 7900 2700 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 7900 2700 50  0001 C CNN
+F 3 "" H 7900 2700 50  0000 C CNN
+	1    7900 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 7900 2300 0    60   Input ~ 0
+INT_R
+Text GLabel 7900 3650 0    60   Input ~ 0
+INT_L
+Wire Wire Line
+	2750 2500 3350 2500
+Wire Wire Line
+	2900 2500 2900 2650
+Wire Wire Line
+	2750 2200 3350 2200
+Wire Wire Line
+	2900 2200 2900 2050
+Wire Wire Line
+	5550 3150 5550 3250
+Wire Wire Line
+	5550 2050 5550 2150
+Wire Wire Line
+	4650 2600 4900 2600
+Wire Wire Line
+	4900 2600 4900 2700
+Wire Wire Line
+	4900 2800 4900 2900
+Wire Wire Line
+	4900 2900 4650 2900
+Wire Wire Line
+	5800 3200 5550 3200
+Connection ~ 5550 3200
+Wire Wire Line
+	5800 3500 6200 3500
+Connection ~ 6050 3500
+Wire Wire Line
+	2200 5900 2300 5900
+Wire Wire Line
+	2300 5800 2200 5800
+Wire Wire Line
+	2200 5700 2300 5700
+Wire Wire Line
+	8400 2700 8400 2850
+Wire Wire Line
+	8400 2050 8400 2100
+Wire Wire Line
+	8800 3750 8900 3750
+Wire Wire Line
+	8800 2400 8900 2400
+Connection ~ 8850 2400
+Connection ~ 8850 3750
+Wire Wire Line
+	8050 4050 8850 4050
+Wire Wire Line
+	8850 4050 8850 3750
+Wire Wire Line
+	8850 2700 8850 2400
+Wire Wire Line
+	8050 2700 8850 2700
+Wire Wire Line
+	7700 4100 7700 4050
+Wire Wire Line
+	7700 4050 7750 4050
+Wire Wire Line
+	7700 2750 7700 2700
+Wire Wire Line
+	7700 2700 7750 2700
+$Comp
+L POT-RESCUE-BT-Modul RV2
+U 1 1 586AD57E
+P 7900 4050
+F 0 "RV2" H 7900 3970 50  0000 C CNN
+F 1 "50k" H 7900 4050 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 7900 4050 50  0001 C CNN
+F 3 "" H 7900 4050 50  0000 C CNN
+	1    7900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3850 8000 3850
+Wire Wire Line
+	7900 2500 8000 2500
+Wire Wire Line
+	7900 2550 7900 2500
+Wire Wire Line
+	7900 3900 7900 3850
+Wire Wire Line
+	7900 3650 8000 3650
+Wire Wire Line
+	7900 2300 8000 2300
+$Comp
+L CONN_01X03 P1
+U 1 1 586B900D
+P 2350 3350
+F 0 "P1" H 2350 3550 50  0000 C CNN
+F 1 "CONN_01X03" V 2450 3350 50  0000 C CNN
+F 2 "Connectors_JST:JST_PH_B3B-PH-K_03x2.00mm_Straight" H 2350 3350 50  0001 C CNN
+F 3 "" H 2350 3350 50  0000 C CNN
+	1    2350 3350
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2650 3250 2    60   Input ~ 0
+OUT_L
+Text GLabel 2650 3450 2    60   Input ~ 0
+OUT_R
+Text GLabel 2650 3350 2    60   Input ~ 0
+AGND
+Text GLabel 7700 2750 3    60   Input ~ 0
+AGND
+Text GLabel 7700 4100 3    60   Input ~ 0
+AGND
+Wire Wire Line
+	6050 3500 6050 2800
+Wire Wire Line
+	6050 2800 6000 2800
+Text Notes 3000 3300 0    60   ~ 0
+Tip
+Text Notes 3000 3500 0    60   ~ 0
+Middle
+Text Notes 3000 3400 0    60   ~ 0
+Base
+$Comp
+L C C4
+U 1 1 586BA47D
+P 10200 2850
+F 0 "C4" H 10225 2950 50  0000 L CNN
+F 1 "1u" H 10225 2750 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 10238 2700 50  0001 C CNN
+F 3 "" H 10200 2850 50  0000 C CNN
+	1    10200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 586BA658
+P 10200 3350
+F 0 "C5" H 10225 3450 50  0000 L CNN
+F 1 "1u" H 10225 3250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 10238 3200 50  0001 C CNN
+F 3 "" H 10200 3350 50  0000 C CNN
+	1    10200 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 10150 3550 0    60   Input ~ 0
+-5V
+$Comp
+L +5V #PWR08
+U 1 1 586BA6C5
+P 10200 2650
+F 0 "#PWR08" H 10200 2500 50  0001 C CNN
+F 1 "+5V" H 10200 2790 50  0000 C CNN
+F 2 "" H 10200 2650 50  0000 C CNN
+F 3 "" H 10200 2650 50  0000 C CNN
+	1    10200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2650 10200 2700
+Wire Wire Line
+	10200 3500 10200 3550
+Wire Wire Line
+	10200 3550 10150 3550
+$Comp
+L GND #PWR09
+U 1 1 586BA76D
+P 10450 3100
+F 0 "#PWR09" H 10450 2850 50  0001 C CNN
+F 1 "GND" H 10450 2950 50  0000 C CNN
+F 2 "" H 10450 3100 50  0000 C CNN
+F 3 "" H 10450 3100 50  0000 C CNN
+	1    10450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3000 10200 3200
+Wire Wire Line
+	10450 3100 10200 3100
+Connection ~ 10200 3100
+Text Notes 9600 2400 0    60   ~ 0
+Bypass caps next to OpAmp
+$Comp
+L CP C1
+U 1 1 586BB1B8
+P 1750 5200
+F 0 "C1" H 1775 5300 50  0000 L CNN
+F 1 "470u" H 1775 5100 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 1788 5050 50  0001 C CNN
+F 3 "" H 1750 5200 50  0000 C CNN
+	1    1750 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 4850 1750 5050
+Wire Wire Line
+	1750 5350 1750 5550
+Wire Wire Line
+	1750 5350 2050 5350
+Wire Wire Line
+	2050 5350 2050 5250
+Wire Wire Line
+	2050 5250 2300 5250
+Wire Wire Line
+	2300 5150 2050 5150
+Wire Wire Line
+	2050 5150 2050 5050
+Wire Wire Line
+	2050 5050 1750 5050
+Connection ~ 1750 5050
+Connection ~ 1750 5350
+Wire Wire Line
+	2650 3450 2550 3450
+Wire Wire Line
+	2550 3350 2650 3350
+Wire Wire Line
+	2650 3250 2550 3250
+$Comp
+L USB_A P3
+U 1 1 58A8855F
+P 3650 2400
+F 0 "P3" H 3850 2200 50  0000 C CNN
+F 1 "USB_A" H 3600 2600 50  0000 C CNN
+F 2 "BTA:USB_A_Fem_Vert" V 3600 2300 50  0001 C CNN
+F 3 "" V 3600 2300 50  0000 C CNN
+	1    3650 2400
+	0    1    1    0   
+$EndComp
+Connection ~ 2900 2200
+Wire Wire Line
+	2750 2300 3350 2300
+Wire Wire Line
+	3350 2400 2750 2400
+Connection ~ 2900 2500
+$Comp
+L GND #PWR010
+U 1 1 58A88DEC
+P 3750 2800
+F 0 "#PWR010" H 3750 2550 50  0001 C CNN
+F 1 "GND" H 3750 2650 50  0000 C CNN
+F 2 "" H 3750 2800 50  0000 C CNN
+F 3 "" H 3750 2800 50  0000 C CNN
+	1    3750 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2700 3750 2800
+Text Label 3150 2400 0    60   ~ 0
+D+
+Text Label 3150 2300 0    60   ~ 0
+D-
+$Comp
+L GND #PWR011
+U 1 1 58A8928C
+P 2350 2800
+F 0 "#PWR011" H 2350 2550 50  0001 C CNN
+F 1 "GND" H 2350 2650 50  0000 C CNN
+F 2 "" H 2350 2800 50  0000 C CNN
+F 3 "" H 2350 2800 50  0000 C CNN
+	1    2350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2800 2350 2700
+$EndSCHEMATC
