@@ -818,10 +818,10 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (module BTA:USB_A_Fem_Vert (layer F.Cu) (tedit 58A9665D) (tstamp 58A9625F)
+  (module BTA:USB_A_Fem_Vert (layer F.Cu) (tedit 58B2D915) (tstamp 58A9625F)
     (at 69.6 95 270)
     (path /58A8855F)
-    (fp_text reference P3 (at 0 3.81 270) (layer F.SilkS)
+    (fp_text reference P3 (at 0 3.81 270) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value USB_A (at 0 -5.08 270) (layer F.Fab) hide
@@ -864,7 +864,7 @@
   (gr_text "USB In" (at 73.41 79.252) (layer F.SilkS) (tstamp 58A88D6E)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "rev 1  2017/02" (at 95 123.575) (layer F.SilkS) (tstamp 58A88D5D)
+  (gr_text "rev 1  2017/03" (at 95 123.575) (layer F.SilkS) (tstamp 58A88D5D)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_text "Car Bluetooth Module" (at 95 121.035) (layer F.SilkS)
